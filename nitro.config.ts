@@ -2,9 +2,12 @@ import { defineNitroConfig } from 'nitropack';
 
 export default defineNitroConfig({
   routeRules: {
-    // '/**': { proxy: 'https://nuxt3-stackblitz-default.netlify.app/**' },
+    '/**': { proxy: 'https://agrobase.app/**' },
+    '/lithuania': {
+      redirect: { to: 'https://agrobase.app/lithuania/', statusCode: 200 },
+    },
     // '/**': {
-    //   redirect: { to: 'https://nuxt3-stackblitz-default.netlify.app/**', statusCode: 200 },
+    //   redirect: { to: 'https://agrobase.app/lithuania/**', statusCode: 200 },
     // },
   },
 });

@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "nitro dev",
-    "build": "nitro build && node ./scripts/addHeaders.js"
+    "build": "nitro build"
   },
   "devDependencies": {
     "nitropack": "latest"

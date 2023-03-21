@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "nitro dev",
-    "build": "nitro build"
+    "build": "nitro build && node ./addRedirects.js"
   },
   "devDependencies": {
     "nitropack": "latest"
